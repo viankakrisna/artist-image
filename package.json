@@ -2,9 +2,9 @@
   "name": "node-sandbox",
   "version": "1.0.0",
   "description": "Simple Node Sandbox",
-  "main": "src/index.js",
+  "main": "index.js",
   "scripts": {
-    "start": "nodemon src/index.js localhost 8080"
+    "start": "nodemon index.js localhost 8080"
   },
   "dependencies": {
     "cheerio": "^1.0.0-rc.3",
