@@ -4,10 +4,12 @@ const fetch = require("isomorphic-fetch");
 const path = require("path");
 const fs = require("fs-extra");
 const tempy = require("tempy");
+const cors = require("cors");
 
 const app = express();
 const port = 8080;
 
+app.use(cors());
 app.get("/", async (req, res) => {
   try {
     if (req.query.artist) {
